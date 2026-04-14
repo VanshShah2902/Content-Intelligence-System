@@ -13,7 +13,7 @@ if not APIFY_API_KEY:
 else:
     client = ApifyClient(APIFY_API_KEY)
 
-def fetch_instagram_posts(profile_url: str, limit: int = 500):
+def fetch_instagram_posts(profile_url: str, limit: int = 80):
     """
     Fetches raw posts from a specific Instagram profile using the Apify SDK.
     """
